@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,400;1,600&display=swap');
+
+:root{
+    --primary-clr: #7522e6;
+    --bg-clr: #f2f4f5;
+    --white-bg: #fff;
+    --dark-text-clr: #363b46;
+    --light-text-clr: #fff;
+    --hover-clr: #f1e8fd;
+}
+
+body.dark-mode{
+    --primary-clr: #7522e6;
+    --bg-clr: #1e1e1e;
+    --white-bg: #23262b;
+    --dark-text-clr: #fff;
+    --light-text-clr: #fff;
+    --hover-clr: #31313f;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-clr);
+}
+
+.container{
+    width: 85px;
+    min-height: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: var(--white-bg);
+    transition: all 0.3s ease;
+}
+
+.container.active{
+    width: 250px;
+}
+
+.container .logo{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.container ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+ul li a{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    white-space: nowrap;
+    text-transform: capitalize;
+    color: var(--dark-text-clr);
+}
+
+ul li:hover a{
+    background-color: var(--hover-clr);
+}
+
+ul li.active a{
+    color: var(--light-text-clr);
+    background-color: var(--primary-clr);
+}
+
+ul li a ion-icon{
+    min-height: 20px;
+    height: 20px;
+    margin-right: 20px;
+    position: relative;
+}
+
+ul li a .noti-icon:before{
+    content: "";
+    position: absolute;
+    top: 3px;
+    right: 2px;
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--primary-clr);
+    border: 1px solid var(--white-bg);
+}
+
+ul li a .num-noti{
+    margin-left: 40px;
+    font-size: 12px;
+    color: var(--light-text-clr);
+    background-color: var(--primary-clr);
+    min-width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+ul li.active a .num-noti{
+    color: var(--primary-clr);
+    background-color: var(--white-bg);
+}
+
+ul li a span{
+    transition: trasform 0.5s;
+    transform: translateX(100px);
+}
+
+.container.active ul li a span{
+    transition-delay: calc(0.02s * var(--i));
+    transform: translateX(0);
+}
+
+ul li a img{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+ul li a span h4{
+    line-height: 1;
+}
+
+ul li a span p{
+    font-size: 12px;
+}
+
+ul li:last-child{
+    margin-top: 50px;
+}
