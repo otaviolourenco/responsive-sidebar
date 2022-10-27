@@ -1,20 +1,13 @@
 <!DOCTYPE html>
-
 <html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" content="Otávio Lourenço">
-    <link rel="stylesheet" href="style.css">
-    
-
-    
-    <title>Tittle</title>
-</head>
-
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Responsive Sidebar</title>
+  </head>
+  <body>
     <div class="container">
         <div class="logo">
             <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" width="50"
@@ -23,95 +16,76 @@
                 
                 <path d="M256 48C141.31 48 48 141.31 48 256s93.31 208 208 208 208-93.31 208-208S370.69 48 256 48zm69.3 96.17a72.5 72.5 0 11-72.6 72.5 72.55 72.55 0 0172.6-72.5zm-155.1 26.36a59.32 59.32 0 11-59.4 59.32 59.35 59.35 0 0159.4-59.32zm-75.85 155c24.5-13.29 55.87-19.94 75.85-19.94 15 0 34.32 3 53.33 10.2a133.05 133.05 0 00-34 27.11c-13.19 15-20.76 32.92-20.76 50.83v15a177.06 177.06 0 01-74.42-83.15zM256 432a175.12 175.12 0 01-59.4-10.33v-27.05c0-52.59 85.75-79.09 128.7-79.09 23 0 58.38 7.63 86.21 22.81A176.14 176.14 0 01256 432z"/></svg>
         </div>
-        <ul class="menu-items">
-            <li class="menu-item active">
-                <a href="#" class="link">
-                    <ion-icon name="home-outline"></ion-icon>
-                    <span style="--i:1">
-                        Home
-                    </span>
-                </a>
-            </li>
-
-            <li class="menu-item">
-                <a href="#" class="link">
-                    <ion-icon name="cube-outline"></ion-icon>
-                    <span style="--i:2">
-                        Dashboard
-                    </span>
-                </a>
-            </li>
-
-            <li class="menu-item">
-                <a href="#" class="link">
-                    <ion-icon name="search-outline"></ion-icon>
-                    <span style="--i:3">
-                        Search
-                    </span>
-                </a>
-            </li>
-
-            <li class="menu-item">
-                <a href="#" class="link">
-                    <ion-icon name="notifications-outline" class="noti-icon"></ion-icon>
-                    <span style="--i:4">
-                        Notifications
-                    </span>
-                    <span class="num-noti">4</span>
-                </a>
-            </li>
-
-            <li class="menu-item">
-                <a href="#" class="link">
-                    <ion-icon name="bookmark-outline"></ion-icon>
-                    <span style="--i:5">
-                        Bookmarks
-                    </span>
-                </a>
-            </li>
-
-            <li class="menu-item">
-                <a href="#" class="link">
-                    <ion-icon name="cog-outline"></ion-icon>
-                    <span style="--i:6">
-                        Settings
-                    </span>
-                </a>
-            </li>
-
-            <li class="menu-item">
-                <a href="#" class="link">
-                    <ion-icon name="help-outline"></ion-icon>
-                    <span style="--i:7">
-                        Help
-                    </span>
-                </a>
-            </li>
-
-            <li class="menu-item dark-mode">
-                <a href="#" class="link">
-                    <ion-icon name="moon-outline"></ion-icon>
-                    <span style="--i:8">
-                        Dark mode
-                    </span>
-                </a>
-            </li>
-
-            <li class="menu-item">
-                <a href="#" class="link">
-                    <img src="profile.jpg" alt="">
-                    <span style="--i:9">
-                        <h4>John Doe</h4>
-                        <p>Web developer</p>
-                    </span>
-                </a>
-            </li>
-        </ul>
+      <ul class="link-items">
+        <li class="link-item active">
+          <a href="#" class="link">
+            <ion-icon name="home-outline"></ion-icon>
+            <span style="--i: 1">Home</span>
+          </a>
+        </li>
+        <li class="link-item">
+          <a href="#" class="link">
+            <ion-icon name="cube-outline"></ion-icon>
+            <span style="--i: 2">dashboard</span>
+          </a>
+        </li>
+        <li class="link-item">
+          <a href="#" class="link"
+            ><ion-icon name="search-outline"></ion-icon>
+            <span style="--i: 3">search</span>
+          </a>
+        </li>
+        <li class="link-item">
+          <a href="#" class="link">
+            <ion-icon class="noti-icon" name="notifications-outline"></ion-icon>
+            <span style="--i: 4">notifications</span>
+            <span class="num-noti">4</span>
+          </a>
+        </li>
+        <li class="link-item">
+          <a href="#" class="link">
+            <ion-icon name="bookmark-outline"></ion-icon
+            ><span style="--i: 5">bookmarks</span>
+          </a>
+        </li>
+        <li class="link-item">
+          <a href="#" class="link">
+            <ion-icon name="cog-outline"></ion-icon>
+            <span style="--i: 6">settings</span>
+          </a>
+        </li>
+        <li class="link-item">
+          <a href="#" class="link">
+            <ion-icon name="help-circle-outline"></ion-icon>
+            <span style="--i: 7">help</span>
+          </a>
+        </li>
+        <li class="link-item dark-mode">
+          <a href="#" class="link">
+            <ion-icon name="moon-outline"></ion-icon>
+            <span style="--i: 8">dark mode</span>
+          </a>
+        </li>
+        <li class="link-item">
+          <a href="#" class="link">
+            <img src="profile.jpg" alt="" />
+            <span style="--i: 9">
+              <h4>John Doe</h4>
+              <p>web developer</p>
+            </span>
+          </a>
+        </li>
+      </ul>
     </div>
-    
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
